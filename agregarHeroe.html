@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <title>Heroes</title>
+    <meta name="title" content="Heroes - PIL">
+    <meta name="description" content="En esta página podemos realizar el alta de Heroes">
+    <link rel ="stylescut icon" href="Favicon/favicon-16x16.png">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="pluguins/bootstrap-5.0.2-dist/css/bootstrap.css">   
+  </head>
+  <body>
+    <header>
+        <div class="collapse" id="navbarHeader">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-8 col-md-7 py-4">
+                <h4 class="text-white">¿Qué es ser un heroe o heroina?</h4>
+                <p class="text-white">Un heroe es: </p>
+                <ul class="caracteristicas">
+                  <li class="caracteristicas-item">Una persona que se distingue por haber realizado una hazaña extraordinaria, especialmente si requiere mucho valor.</li>
+                  <li class="caracteristicas-item">Personaje principal en una obra literaria o cinematográfica, especialmente el que produce admiración por sus buenas cualidades.</li>
+                  <li class="caracteristicas-item">Ser mitológico engendrado por una divinidad y un humano.</li>
+                </ul>
+              </div>
+              <div class="col-sm-4 offset-md-1 py-4">
+                <h4 class="text-white">Contacto</h4>
+                <ul class="list-unstyled">
+                  <li><a href="https://www.ispc.edu.ar/" class="text-white">ISPC</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="navbar navbar-dark shadow-sm">
+          <div class="container">
+            <a href="index.html" class="navbar-brand d-flex align-items-center">
+              <img src="Imagenes/logo.png" width="100%" height="50" fill="none">
+              <strong>Heroes</strong>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="white navbar-toggler-icon"></span>
+            </button>
+          </div>
+        </div>
+      </header>
+  
+      <main>
+        <section class="container" style="margin-top: 60px;">
+          <div>
+            <div>
+              <h1 class="fw-light">Agregar Héroe</h1>
+            </div>
+          </div>
+        </section>
+
+        <div class="container mb-3" style="margin-top: 40px;">
+            <div class="container mb-4">
+                <label class="form-label">Nombre del heroe</label>
+                <input type="text" class="form-control" placeholder="Nombre">
+            </div>
+
+            <div class="container mb-4">
+                <label class="form-label">Edad del heroe</label>
+                <input type="number" class="form-control" placeholder="Edad">
+            </div>
+
+            <div class="container mb-4">
+                <label class="form-label">Descripcion del heroe</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Descripcion"></textarea>
+            </div>
+
+            <div class="container mb-4">
+                <label class="form-label">Seleccione el universo al que pertenece</label>
+                <select class="form-select" aria-label="Default">      
+                    <option value="1">Marvel</option>
+                    <option value="2">DC</option>
+                </select>
+            </div>
+           
+            <div class="container mb-4">
+                <label class="form-label">Agregar imagen</label>
+                <input type="file" class="form-control" id="inputGroupFile02">
+            </div>
+
+            <button type="button" class="btn btn-primary" style="background:#C20000; color:white; border-color:#C20000; margin-left: 950px;">Agregar héroe</button>
+
+        </div>
+      </main>
+  
+      <footer class="text-muted py-5">
+        <div class="container">
+          <p class="float-end mb-1">
+            <a href="#">Back to top</a>
+          </p>
+          <p class="mb-1">© 2022 Company, Inc</p>
+        </div>
+      </footer>
+  
+  
+          <script src="pluguins/bootstrap-5.0.2-dist/js/bootstrap.js" ></script>
+  </body>
+</html>
